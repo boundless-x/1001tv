@@ -41,5 +41,6 @@
     "gh-pages": "^6.1.1"
   },
 "predeploy" : "npm run build",
-"deploy" : "gh-pages -d build",  "homepage": "http://boundless-x.github.io/1001tv"
+"deploy" : "gh-pages -d build",
+"homepage": "http://boundless-x.github.io/1001tv"
 }
