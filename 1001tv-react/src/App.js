@@ -17,7 +17,11 @@ function App() {
 const [movies, setMovies] = useState([]);
 
 useEffect(() => {
-    fetch('/movies.yaml')
+    // TODO: use CDN
+    console.log(process.env.NODE_ENV)
+    const movie_url =  process.env.NODE_ENV == "development" ? 'movies.yaml' : '/1001tv/movies.yaml';
+    console.log(movie_url)
+    fetch(movie_url)
         .then(response => response.text())
         .then(text => {
             const movieData = yaml.load(text);

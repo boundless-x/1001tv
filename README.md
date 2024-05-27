@@ -14,3 +14,8 @@ http://boundless-x.github.io/1001tv
 Add eslint to react project:
 https://www.freecodecamp.org/news/how-to-add-eslint-to-your-react-project/
 
+How to run ESLint
+`npx eslint /path`
+
+How to fix the issue:
+`npx eslint --fix .`
