@@ -9,3 +9,8 @@ We can deploy our React application by simply running: `npm run deploy`
 
 Website page: 
 http://boundless-x.github.io/1001tv
+
+
+Add eslint to react project:
+https://www.freecodecamp.org/news/how-to-add-eslint-to-your-react-project/
+
