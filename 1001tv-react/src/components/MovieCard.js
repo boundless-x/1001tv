@@ -1,19 +1,23 @@
 // src/components/MovieCard.js
 
 import React from 'react';
-import './MovieCard.css'; // You can create this CSS file to style your component
+import { Card, Rate } from 'antd';
+
+const { Meta } = Card;
 
 const MovieCard = ({ movie }) => {
     return (
-        <div className="movie-card">
-            <img src={movie.picture} alt={`${movie.name} Poster`} className="movie-card__image" />
-            <div className="movie-card__details">
-                <h2 className="movie-card__name">{movie.name}</h2>
-                <p className="movie-card__rating">Rating: {movie.rating}</p>
-            </div>
-        </div>
+
+        <Card
+        hoverable
+        style={{
+        width: 240,
+        }}
+        cover={<img alt={movie.name} src={movie.picture} />}
+        >
+        <Meta title={movie.name} description={movie.rating} />
+        </Card>
     );
 };
 
 export default MovieCard;
-
