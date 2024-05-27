@@ -1,7 +1,7 @@
 // src/components/MovieCard.js
 
 import React from 'react';
-import { Card, Rate } from 'antd';
+import { Card } from 'antd';
 
 const { Meta } = Card;
 
